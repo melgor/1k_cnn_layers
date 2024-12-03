@@ -1,0 +1,26 @@
+experiment_name: convnext_31_31_275_31
+logging_dir: /home/blcv/Projects/1k_layers/logs/
+batch_size: 64
+num_workers: 16
+early_stop_metric: valid/accuracy
+model_checkpoint_metric: valid/accuracy
+num_epochs: 100
+use_wandb_logger: True
+model_blocks:
+  - 31
+  - 31
+  - 275
+  - 31
+optimisation_config:
+  early_stop_patience: 30
+  learning_rate: 0.001
+  grad_accumulation: 1
+
+
+# 3 3 9 3
+# 3 3 27 3
+# 6 6 54 6
+# 14 14 125 14
+# 28 28 250 28
+# 56 56 500 56
+# 112 112 1000 112

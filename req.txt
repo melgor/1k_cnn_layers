@@ -1,0 +1,16 @@
+omegaconf==2.3.0
+torch
+torchmetrics
+torchvision
+pillow==10.4.0
+numpy==1.26.4
+lightning
+lightning-utilities
+PyYAML==6.0.2
+tqdm==4.66.5
+pandas==2.2.3
+tensorboard==2.18.0
+loguru==0.7.2
+scikit-learn~=1.5.2
+scipy~=1.14.1
+wandb

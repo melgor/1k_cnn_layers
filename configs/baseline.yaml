@@ -1,0 +1,12 @@
+experiment_name: baseline_4_4_36_4
+logging_dir: /home/blcv/Projects/1k_layers/logs/
+batch_size: 64
+num_workers: 16
+validation_check_interval: 1.0
+early_stop_metric: valid/accuracy
+model_checkpoint_metric: valid/accuracy
+num_epochs: 100
+optimisation_config:
+  early_stop_patience: 30
+  learning_rate: 0.001
+
